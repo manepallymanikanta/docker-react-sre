@@ -6,7 +6,7 @@ before_install:
   - docker build -t manepallymanikanta/docker-react-sre -f Dockerfile.dev .
 
 script:
-  - docker run manepallymanikanta/docker npm run test -- --coverage
+  - docker run manepallymanikanta/docker-react-sre npm run test -- --coverage
 
 
 deploy:
